@@ -7,12 +7,14 @@
   
   <app-auth-form #loginForm (formSubmitted)="loginUser($event)" [actionButtonText]="'Ingresar'"></app-auth-form>
 
-  <ion-button expand="block" fill="clear" routerLink="/reset-password">
-    Recuperar contraseña
-  </ion-button>
-  <ion-button expand="block" fill="clear" routerLink="/signup">
-    Registrate
-  </ion-button>
+    <ion-button class="button" fill="clear" routerLink="/reset-password">
+      Recuperar contraseña
+    </ion-button>
+    <ion-item lines="none">
+    </ion-item>
+      <ion-button class="button" expand="block" color="primary" fill="clear" routerLink="/signup">
+        Registrar
+      </ion-button>
 
  
 </ion-content>
