@@ -1,0 +1,18 @@
+<ion-content class="ion-padding ion-text-center">
+  
+  <ion-title>
+    <img alt="logo"   src="https://i.pinimg.com/564x/50/c3/76/50c3760c4f9fd7df41c5d40e3a72b259.jpg" > 
+  </ion-title>
+
+  
+  <app-auth-form #loginForm (formSubmitted)="loginUser($event)" [actionButtonText]="'Ingresar'"></app-auth-form>
+
+  <ion-button expand="block" fill="clear" routerLink="/reset-password">
+    Recuperar contraseña
+  </ion-button>
+  <ion-button expand="block" fill="clear" routerLink="/signup">
+    Registrate
+  </ion-button>
+
+ 
+</ion-content>

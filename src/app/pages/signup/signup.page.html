@@ -1,0 +1,13 @@
+<ion-header>
+    <ion-toolbar class="bg-color">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/login"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center">Crear Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <app-auth-form #signupForm (formSubmitted)=signupUser($event) [actionButtonText]="'Registrar'"></app-auth-form>
+  
+  </ion-content>
