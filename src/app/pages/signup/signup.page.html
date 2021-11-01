@@ -10,6 +10,7 @@
   <ion-content class="ion-padding-top">
     <ion-title>
     </ion-title>
-    <app-auth-form #signupForm (formSubmitted)=signupUser($event) [actionButtonText]="'Registrar'"></app-auth-form>
-  
+    <div class="ion-padding">
+      <app-auth-form #signupForm (formSubmitted)=signupUser($event) [actionButtonText]="'Registrar'"></app-auth-form>
+    </div>
   </ion-content>

@@ -11,6 +11,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 import { environment } from 'src/environments/environment';
+import { ComponentesModule } from './componentes/componentes.module';
 // importar libreria
 import { OneSignal } from '@ionic-native/onesignal/ngx';
 // crud 
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     AngularFireAuthModule,
     AngularFirestoreModule,
     FormsModule,
+    ComponentesModule
   ],
   providers: [ OneSignal,StatusBar,SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
