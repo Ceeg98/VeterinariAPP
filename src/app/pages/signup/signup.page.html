@@ -1,15 +1,14 @@
 <ion-header>
-    <ion-toolbar class="bg-color">
-      <ion-buttons slot="start">
-        <ion-back-button defaultHref="/login"></ion-back-button>
-      </ion-buttons>
-      <ion-title class="ion-text-center">Crear Usuario</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar class="bg-color">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Crear Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
   
-  <ion-content>
+  <ion-content class="ion-padding-top">
     <ion-title>
-      <img alt="logo"   src="https://i.pinimg.com/564x/50/c3/76/50c3760c4f9fd7df41c5d40e3a72b259.jpg" > 
     </ion-title>
     <app-auth-form #signupForm (formSubmitted)=signupUser($event) [actionButtonText]="'Registrar'"></app-auth-form>
   
