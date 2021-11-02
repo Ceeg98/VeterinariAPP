@@ -28,7 +28,26 @@ const routes: Routes = [
   loadChildren: () =>
     import('./pages/signup/signup.module').then(m => m.SignupPageModule)
 },
-  
+  { path: 'registro-mascota', 
+  loadChildren: () =>
+   import('./pages/registro-mascota/registro-mascota.module').then(
+     m => m.RegistroMascotaPageModule)
+},
+  { path: 'registro-cita', 
+  loadChildren: () =>
+   import ('./pages/registro-cita/registro-cita.module').then(
+     m => m.RegistroCitaPageModule)
+},
+  { path: 'citas', 
+  loadChildren: () =>
+  import ('./pages/citas/citas.module').then(
+    m => m.CitasPageModule) 
+},
+  { path: 'mascotas', 
+  loadChildren: () =>
+  import ('./pages/mascotas/mascotas.module').then(
+    m => m.MascotasPageModule) 
+}
  
 ];
 

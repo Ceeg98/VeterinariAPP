@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="bg-color">
+    <ion-title class="ion-text-center">Solicitud de Cita</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <form class="ion-text-center">
+    
+    <ion-item lines="none">
+      <ion-label  color="dark"> Seleccione Mascota </ion-label>
+      <ion-select  placeholder="Seleccione 1">
+        <ion-select-option value="1">Gaston</ion-select-option>
+        <ion-select-option value="2">Pelusa</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label color="dark"> Seleccionar día </ion-label>
+      <ion-datetime  name="fechaCita" placeholder="Fecha" display-format="DD.MM.YYYY"></ion-datetime>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-label  color="dark"> Seleccione hora </ion-label>
+      <ion-datetime name="horaCita" placeholder="Hora"  display-format="HH:mm"></ion-datetime>
+    </ion-item>
+    <br>
+<ion-button expand="block" color="dark">Solicitar</ion-button>
+  </form>
+</ion-content>

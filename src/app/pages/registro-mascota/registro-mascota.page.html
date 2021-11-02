@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="bg-color">
+    <ion-title class="ion-text-center">Registro de Mascota</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <form class="ion-text-center">
+    
+    <ion-label  color="dark"> Nombre Mascota </ion-label>
+    <ion-item class="form">
+      <ion-input type="text" name="nombreMascota" required></ion-input> 
+    </ion-item>
+    
+    <ion-label  color="dark"> Fecha de nacimiento (Aproximado) </ion-label>
+    <ion-item class="form">
+      <ion-datetime name="fechaNacMasc" display-format="DD.MM.YYYY"></ion-datetime>
+    </ion-item>
+    
+    <ion-label  color="dark"> Peso (kg) </ion-label>
+    <ion-item class="form">
+      <ion-input type="number" name="pesoMascota" required></ion-input> 
+    </ion-item>
+       
+    <ion-label  color="dark"> Tipo de Mascota </ion-label>
+    <ion-item class="form">
+      <ion-input type="text" name="tipoMascota" required></ion-input> 
+    </ion-item>
+    <br>
+<ion-button expand="block" color="dark">Registrar</ion-button>
+  </form>
+</ion-content>
